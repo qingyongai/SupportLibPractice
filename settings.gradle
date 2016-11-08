@@ -1,1 +1,3 @@
-include ':percent'
+include ':app'
+include ':coordinatorlayout'
+include ':constraintlayout'
