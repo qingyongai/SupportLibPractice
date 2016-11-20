@@ -41,10 +41,13 @@ public class AppbarColltoolbarActivity extends AppCompatActivity {
             @Override
             public void onGenerated(Palette palette) {
                 try {
+                    int transColor = getResources().getColor(android.R.color.transparent);
                     int defaultColor = getResources().getColor(R.color.colorPrimary);
                     int defaultTitleColor = Color.WHITE;
                     int bgColor = palette.getDarkVibrantColor(defaultColor);
                     int titleColor = palette.getLightVibrantColor(defaultTitleColor);
+
+                    bgColor = transColor;
 
                     collapsingToolbarLayout.setContentScrimColor(bgColor);
                     collapsingToolbarLayout.setCollapsedTitleTextColor(titleColor);
