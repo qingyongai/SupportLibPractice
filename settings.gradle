@@ -1,3 +1,3 @@
-include ':app'
+include ':app', ':customerview'
 include ':coordinatorlayout'
 include ':constraintlayout'
